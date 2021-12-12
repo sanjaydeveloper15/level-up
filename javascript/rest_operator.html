@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 - Rest Operator</title>
+</head>
+<body>
+	<h1>ES6 - Rest Operator</h1>
+	<p>Rest operator means passing multiple value in comma seprated from in function and they can get as Object <b>...args</b></p>
+	<hr>
+	<p style="color: #9e9e9e;"> 
+		function multiplies(){<br>
+			//for in way<br>
+			for (var i in arguments) {<br>
+				document.write(arguments[i]);<br>
+			}<br>
+			document.write('<br>');<br>
+			for (var i = 0; i < arguments.length; i++) {<br>
+				document.write(arguments[i]);<br>
+			}<br>
+			document.write('<br>');<br>
+			let res = 1;<br>
+			for(let i in arguments){<br>
+				res *= arguments[i];<br>
+			}<br>
+			document.write(`Final result via for in: ${res}`);<br>
+		}
+		multiplies(1,2,3,4);
+	</p>
+	<hr>
+	<script type="text/javascript">
+		function multiplies(){
+			//for in way
+			for (var i in arguments) {
+				document.write(arguments[i]);
+			}
+			document.write('<br>');
+			for (var i = 0; i < arguments.length; i++) {
+				document.write(arguments[i]);
+			}
+			document.write('<br>');
+			let res = 1;
+			for(let i in arguments){
+				res *= arguments[i];
+			}
+			document.write(`Final result via for in: ${res}`);
+		}
+		multiplies(1,2,3,4);
+	</script>
+</body>
+</html>

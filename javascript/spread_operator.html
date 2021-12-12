@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spread Operator</title>
+</head>
+<body>
+	<h1>ES6 - Spread Operator</h1>
+	<p>Spread operator in mostly using for Array while calling we need to give ... for function for get individual values</p>
+	<hr>
+	<p style="color: green">
+		function multiplies(){<br>
+			//for in way<br>
+			for (var i in arguments) {<br>
+				document.write(arguments[i]);<br>
+			}<br>
+			document.write('<br>');<br>
+			for (var i = 0; i < arguments.length; i++) {<br>
+				document.write(arguments[i]);<br>
+			}<br>
+			document.write('<br>');<br>
+			let res = 1;<br>
+			for(let i in arguments){<br>
+				res *= arguments[i];<br>
+			}<br>
+			document.write(`Final result via for in: ${res}`);<br>
+		}<br>
+		var arr = [1,2,3,4,5];<br>
+		multiplies<b>(...arr)</b>;<br>
+	</p>
+	<hr>
+	<script type="text/javascript">
+		function multiplies(){
+			//for in way
+			for (var i in arguments) {
+				document.write(arguments[i]);
+			}
+			document.write('<br>');
+			for (var i = 0; i < arguments.length; i++) {
+				document.write(arguments[i]);
+			}
+			document.write('<br>');
+			let res = 1;
+			for(let i in arguments){
+				res *= arguments[i];
+			}
+			document.write(`Final result via for in: ${res}`);
+		}
+		var arr = [1,2,3,4,5];
+		multiplies(...arr);
+	</script>
+</body>
+</html>

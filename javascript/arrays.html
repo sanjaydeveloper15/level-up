@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Arrays</title>
+</head>
+<body>
+<h3>JS Arrays</h3>
+<script type="text/javascript">
+	var arr = ['a','b','','d','e','f'];
+	document.write(arr);
+	arr.pop();
+	document.write("<br>" + arr);
+	document.write("<h4>Array Filter()</h4>");
+	var ar = [10,20,30,40,50];
+	document.write(ar);
+	document.write("<br>");
+	var new_ar = ar.filter(changeAr);
+	function changeAr(val){
+		return val > 11;
+	}
+	document.write(new_ar);
+
+	document.write("<h4>Array toString()</h4>");
+	var c = ['Anukriti','Riya','Pinki','Shristi'];
+	document.write(typeof c + " " + c);
+	document.write("<br>");
+	var d = c.toString();
+	document.write(typeof d + " " + d);
+
+	document.write("<h4>Array fill()</h4>");
+	document.write(typeof c + " " + c);
+	document.write("<br>");
+	document.write(typeof c.fill('Gayatri') + " " + c.fill('Gayatri'));
+
+	document.write("<h4>Array forEach()</h4>");
+	ar.forEach(function(val){
+		document.write(val + "<br>");
+	})
+</script>
+</body>
+</html>

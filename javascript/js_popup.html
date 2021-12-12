@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a class="btn btn-sm btn-info" onclick="alertBox()" style="cursor: pointer;">Simple Alert Box</a><br>
+	<a class="btn btn-sm btn-info" onclick="confirmBox()" style="cursor: pointer;">Confirm Box</a><br>
+	<a class="btn btn-sm btn-info" onclick="promptBox()" style="cursor: pointer;">Prompt Box</a>
+</body>
+<script type="text/javascript">
+	function alertBox() {
+		alert('Simple alert box clicked');
+	}
+	function confirmBox(){
+		let check = confirm("Are you sure, you want to continue?");
+		if(check){
+			alert('Thanks');
+		}
+	}
+	function promptBox(){
+		let ask = prompt("Username");
+		if(ask){
+			alert("Success your username is :"+ ask);
+		}else{
+			alert('Wrong Username');
+		}
+	}
+</script>
+</html>

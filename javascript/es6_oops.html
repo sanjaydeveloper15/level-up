@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 OOP</title>
+</head>
+<body>
+	<h1>ES6 OOP</h1>
+	<hr>
+	<p style="color: green">
+		class School{<br>
+			constructor(){<br>
+				document.write('JS Constructor Calling...');<br>
+			}<br>
+
+			//prototype functions<br>
+			book_list(){<br>
+				return ['Hindi','Englis','Math','Science','SST'];<br>
+			}
+
+			static name(){<br>
+				return 'Queen Mary School';<br>
+			}<br>
+		}<br>
+
+		let obj = new School();<br>
+		console.log(obj.book_list());<br>
+		document.write(`School name is ${School.name()}`);<br>
+	</p>
+	<hr>
+	<script type="text/javascript">
+		class School{
+			constructor(){
+				document.write('JS Constructor Calling...');
+			}
+
+			//prototype functions
+			book_list(){
+				return ['Hindi','Englis','Math','Science','SST'];
+			}
+
+			static name(){
+				return 'Queen Mary School';
+			}
+		}
+
+		let obj = new School();
+		console.log(obj.book_list());
+		document.write(`<br> School name is ${School.name()}`);
+	</script>
+</body>
+</html>

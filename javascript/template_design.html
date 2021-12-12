@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template Strings</title>
+</head>
+<body>
+	<h1>ES6 - Template Strings/Literals</h1>
+	<p>
+		let uname = 'Rahul', <br>
+		message = `Hello ${uname}, Your 4 digits One Time Password is: ${getOTP(4)} `;<br>
+		document.write(message);
+	</p>
+	<script type="text/javascript">
+		function getOTP(otp_digits){
+			var digits = '0123456789';
+		    var otpLength = otp_digits;
+		    var otp = '';
+		    for(let i=1; i<=otpLength; i++)
+		    {
+		        var index = Math.floor(Math.random()*(digits.length));
+		        otp = otp + digits[index];
+		    }
+		    return otp;
+		}
+		let uname = 'Rahul', 
+		message = `Hello ${uname}, Your 4 digits One Time Password is: ${getOTP(4)} `;
+		document.write(message);
+	</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+export let message = "Two JS file called.";

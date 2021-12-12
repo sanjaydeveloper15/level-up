@@ -1,0 +1,1 @@
+document.write("<h2>JS</h2> via document.write()");
